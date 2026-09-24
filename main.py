@@ -6,7 +6,6 @@ start = perf_counter()
 solver = Solver()
 for i in range(1, 1001):
     print(f"Number: {i}")
-    #solver.readfile(f"../uuf50-218/UUF50.218.1000/uuf50-0{i}.cnf")
     solver.readfile(f"../uf100-430/uf100-0{i}.cnf")
     solver.solve()
     #print(solver.checker())
